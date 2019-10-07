@@ -54,6 +54,7 @@ h3 {
 
 #masthead {
   position: fixed;
+  top: 0;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -214,4 +215,90 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 640px) {
+  
+  #masthead {
+    position: static;
+    top: 0;
+    margin-bottom: -20px;
+  }
+  .container {
+    width: 95%;
+  }
+
+  #main-container {
+    padding-top: 0;
+  }
+  #logo {
+    width: 100%;
+  }
+
+  .main-section {
+    padding: 20px;
+    margin: 40px 0 40px;
+  }
+
+  h1 {
+    padding-bottom: 10px;
+    margin: 0 0 15px 0;
+  }
+
+  nav {
+    width: 100%;
+    padding-left: 20%
+  }
+
+  .auth-image {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  #masthead {
+    width: 100%;
+    top: 0;
+  }
+  
+  .container {
+    width: 95%;
+  }
+
+  .main-section {
+    padding: 20px;
+    margin: -20px 0 40px;
+  }
+
+  h1 {
+    padding-bottom: 10px;
+    margin: 0 0 15px 0;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  #masthead {
+    width: calc(100% - 50px);
+    top: 0;
+  }
+  
+  footer {
+    width: 100%;
+  }
+  .container {
+    width: 960px;
+  }
+
+  .main-section {
+    width: 75%;
+    padding: 20px;
+    margin: -20px 0 40px;
+  }
+
+  h1 {
+    padding-bottom: 10px;
+    margin: 0 0 15px 0;
+  }
+
 }
